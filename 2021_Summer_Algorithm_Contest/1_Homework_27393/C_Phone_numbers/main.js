@@ -7,15 +7,15 @@ function main() {
 
   function convert(str) {
     str = str.replace("+7", "8").replace(/\-|\(|\)/g, "");
-    if(str.length === 7) {
+    if (str.length === 7) {
       str = "8495" + str;
     }
     return str;
   }
   input = convert(input)
 
-  for(let phone of phoneBook) {
-    if(input === convert(phone)) {
+  for (let phone of phoneBook) {
+    if (input === convert(phone)) {
       result.push("YES");
     } else {
       result.push("NO");

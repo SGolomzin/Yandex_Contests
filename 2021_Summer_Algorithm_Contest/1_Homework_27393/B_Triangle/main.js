@@ -9,7 +9,7 @@ function main() {
 
   let result = "NO";
         
-  if( a + b > c && b + c > a && c + a > b) {
+  if ( a + b > c && b + c > a && c + a > b) {
     result = "YES";
   } 
 

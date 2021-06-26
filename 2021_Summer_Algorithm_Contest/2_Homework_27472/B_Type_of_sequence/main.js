@@ -20,10 +20,10 @@ function main() {
   // Сравниваем 2 числа
   function compare(a, b) {
     // Числа равны значит CONST 100
-    if(a === b) {
+    if (a === b) {
       return 4;
     // Первое число меньше --> ASC 010
-    } else if(a < b) {
+    } else if (a < b) {
       return 2;
     // Второе число меньше --> DESC 001
     } else {
@@ -32,7 +32,7 @@ function main() {
   }
 
   // проходим по списку чисел пока не встретим число -2000000000 и пока флаг не окажется в состоянии 3 или 7
-  for(let i = 0; i < nums.length - 1 && nums[i + 1] !== -2e+9 && (flag !== 3 || flag !== 7); i++) {
+  for (let i = 0; i < nums.length - 1 && nums[i + 1] !== -2e+9 && (flag !== 3 || flag !== 7); i++) {
     // если сравнение возвращает новое состояние флага, то выполняем побитовое сложение
     flag = flag === compare(nums[i], nums[i + 1]) ? flag : flag | compare(nums[i], nums[i + 1]);
   }

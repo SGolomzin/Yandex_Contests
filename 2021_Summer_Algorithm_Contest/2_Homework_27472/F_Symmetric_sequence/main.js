@@ -10,8 +10,8 @@ function main() {
   // return -1 if nums is symmetrical
   function asymPos(nums, size){
     let pos = -1;
-    for(let i = 0; i < Math.floor(size / 2); i++) {
-      if(nums[i] !== nums[size - i - 1]) {
+    for (let i = 0; i < Math.floor(size / 2); i++) {
+      if (nums[i] !== nums[size - i - 1]) {
         pos = i
         break;
       }
@@ -22,13 +22,13 @@ function main() {
   let counter = 1,
       result;
   
-  if(asymPos(nums, size) === -1) {
+  if (asymPos(nums, size) === -1) {
     result = 0;
   } else {
     let tmp = [nums[0]]
-    for(let i = 1; i < size; i++) {
+    for (let i = 1; i < size; i++) {
       let test = asymPos(nums.concat(...tmp), size + i);
-      if(test == -1) break;
+      if (test == -1) break;
       tmp.unshift(nums[i])
       counter++
     }

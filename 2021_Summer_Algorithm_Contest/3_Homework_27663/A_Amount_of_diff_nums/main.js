@@ -2,10 +2,9 @@ const fs = require("fs");
 
 function main() {
   const fileContent = fs.readFileSync("input.txt", "utf8"),
-        [] = fileContent.toString().match(/.+$/gm),
-        result
-  
-  fs.writeFileSync("output.txt", result)
+        set = new Set(fileContent.toString().match(/[-]?\d+/g))
+
+  fs.writeFileSync("output.txt", set.size.toString())
 }
 
 main()

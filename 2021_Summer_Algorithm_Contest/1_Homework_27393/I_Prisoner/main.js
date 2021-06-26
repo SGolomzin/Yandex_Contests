@@ -8,7 +8,7 @@ function main() {
         [brMin1, brMin2] = [a, b, c].sort((a,b) => a - b);
 
   let result = 'NO'
-  if(holeMinSide >= brMin1 && holeMaxSide >= brMin2) {
+  if (holeMinSide >= brMin1 && holeMaxSide >= brMin2) {
     result = 'YES'
   }
   

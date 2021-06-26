@@ -9,14 +9,14 @@ function main() {
   let i = 0,
       result;
 
-  while(minNums.length < 3 && i < nums.length) {
+  while (minNums.length < 3 && i < nums.length) {
     minNums.push(nums[i]);
     i++
   }
 
   i = nums.length - 1;
 
-  while(maxNums.length < 3 && i >= 0) {
+  while (maxNums.length < 3 && i >= 0) {
     maxNums.push(nums[i])
     i--
   }

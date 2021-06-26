@@ -9,16 +9,16 @@ function main() {
       min1 = max2,
       min2 = max1;
 
-  for(let i = 2; i < nums.length; i++) {
-    if(nums[i] > nums[max1]) {
+  for (let i = 2; i < nums.length; i++) {
+    if (nums[i] > nums[max1]) {
       max2 = max1
       max1 = i
-    } else if(nums[i] > nums[max2]) {
+    } else if (nums[i] > nums[max2]) {
       max2 = i
-    } else if(nums[i] < 0 && nums[i] < nums[min1]) {
+    } else if (nums[i] < 0 && nums[i] < nums[min1]) {
       min2 = min1
       min1 = i
-    } else if(nums[i] < 0 && nums[i] < nums[min2]){
+    } else if (nums[i] < 0 && nums[i] < nums[min2]){
       min2 = i
     } 
   }

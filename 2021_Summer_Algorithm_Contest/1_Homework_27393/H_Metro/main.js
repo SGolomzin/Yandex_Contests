@@ -10,7 +10,7 @@ function main() {
 
   let result = ''
 
-  if(maxPath1 < minPath2 || maxPath2 < minPath1) {
+  if (maxPath1 < minPath2 || maxPath2 < minPath1) {
     result = -1;
   } else {
     result = [Math.max(minPath1, minPath2), Math.min(maxPath1, maxPath2)].join(' ')

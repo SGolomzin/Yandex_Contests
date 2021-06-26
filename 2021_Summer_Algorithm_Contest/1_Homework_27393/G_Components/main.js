@@ -8,7 +8,7 @@ function main() {
   while(n >= k) {
     maxK = parseInt(n / k)
     maxM = parseInt(k / m)
-    if(!maxM) break;
+    if (!maxM) break;
     restN = n % k
     restK = k % m
     details += maxK * maxM

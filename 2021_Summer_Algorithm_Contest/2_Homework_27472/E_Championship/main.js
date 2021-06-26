@@ -9,9 +9,9 @@ function main() {
       result,
       hasWinnerBeforeTarget = false;
   
-  for(let i = 1; i < numOfParticipants - 1; i++) {
-    if(results[i - 1] == winner) hasWinnerBeforeTarget = true;
-    if(results[i] % 10 == 5 && hasWinnerBeforeTarget && +results[i] > +results[i + 1]) {
+  for (let i = 1; i < numOfParticipants - 1; i++) {
+    if (results[i - 1] == winner) hasWinnerBeforeTarget = true;
+    if (results[i] % 10 == 5 && hasWinnerBeforeTarget && +results[i] > +results[i + 1]) {
       target.push(results[i])
     }
   }

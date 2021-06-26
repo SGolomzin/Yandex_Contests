@@ -6,13 +6,13 @@ function main() {
 
   let fl = true;
   
-  for(let i = 0; i < arr.length - 1 && fl; i++) {
-    if(arr[i] >= arr[i + 1]) {
+  for (let i = 0; i < arr.length - 1 && fl; i++) {
+    if (arr[i] >= arr[i + 1]) {
         fs.writeFileSync("output.txt", "NO");
         fl = false;
     }
   }
-  if(fl) fs.writeFileSync("output.txt", "YES")
+  if (fl) fs.writeFileSync("output.txt", "YES")
 }
 
 main()

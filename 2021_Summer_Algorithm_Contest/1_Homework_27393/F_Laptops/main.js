@@ -5,14 +5,14 @@ function main() {
         [a, b, c, d] = fileContent.toString().match(/.+$/gm)[0].split(' ').map(el => Number(el));
 
   let result = ''
-  if(a == b && b == c && c == d){
+  if (a == b && b == c && c == d){
     result = 2 * a + ' ' + a;
   } else {
     let areas = {}
   
     function hash(a, b, c, d) {
       let area = (a + c) * Math.max(b, d)
-      if(!areas[area]) {
+      if (!areas[area]) {
         areas[area] = [(a + c), Math.max(b, d)]
       }
     }
